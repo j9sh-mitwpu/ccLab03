@@ -64,16 +64,16 @@ app.post("/sign_up", function(req,res){
 			console.log("Record inserted Successfully");		
 	});
 		
-	return res.redirect('\signup-success');
+	return res.redirect('/signup-success');
 })
 
 
 app.get('/', function(req, res){
-    res.sendFile(__dirname + "\\index.html");
+    res.sendFile(__dirname + "/index.html");
 });
 
 app.get('/signup-success',(req,res) => {
-	res.sendFile(__dirname	+ "\\signup_success.html");
+	res.sendFile(__dirname	+ "/signup_success.html");
 });
 
 app.listen(3000);
